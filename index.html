@@ -1,3 +1,22 @@
 
 <h1>Hello World<h1>
-<p>my site</p>
+<p>p3</p>
+<script src="//imgcache.qq.com/qcloud/tcbjs/1.3.4/tcb.js"></script>
+<script>
+  var app = tcb.init({
+    env: 'test-1d173d'
+  })
+  
+  const auth = app.auth();
+
+  // 匿名登录
+  auth.signInAnonymously().then(() => {
+    // 登录成功操作逻辑
+    alert("登录成功");
+  });
+
+  // 匿名登录成功后检测登录态isAnonymous为true
+  const loginState = await auth.getLoginState();
+  console.log(loginState.isAnonymous) // true
+  alert(loginState.isAnonymous)
+</script>
