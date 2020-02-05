@@ -1,25 +1,4 @@
-
-<div id="text">hello2</div>
- 
-<script src="https://imgcache.qq.com/qcloud/tcbjs/1.3.5/tcb.js">
-
-  var app = tcb.init({
-    env: 'test-1d173d'
-  })
-  
-  const auth = app.auth();
-
-  // 匿名登录
-  auth.signInAnonymously().then(() => {
-    // 登录成功操作逻辑
-    alert("登录成功");
-  });
-
-  // 匿名登录成功后检测登录态isAnonymous为true
-  const loginState = await auth.getLoginState();
-  console.log(loginState.isAnonymous) // true
-  alert(loginState.isAnonymous)
-
-
-  document.getElementById("text").innerHTML = loginState.isAnonymous;
-</script>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel=stylesheet><link href=https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css rel=stylesheet><title>Employee Manager</title></head><body><script src=//imgcache.qq.com/qcloud/tcbjs/1.3.4/tcb.js></script><script>// const tcb = require("tcb-js-sdk")
+      var app = tcb.init({
+        env: 'test-449f3c'
+      })</script><div id=app></div><script src=https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js></script><script src=https://code.jquery.com/jquery-3.4.1.js integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=anonymous></script><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.4ef6973e0ab1eee151e4.js></script><script type=text/javascript src=./static/js/app.632cbdfb3917e7e5978e.js></script></body></html>
